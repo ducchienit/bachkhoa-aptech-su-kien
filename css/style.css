@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+body{
+	margin: 0;
+    font-size: 14px;
+    line-height: 168%;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+p, ul{
+    margin: 0 0 15px;
+}
+.container{
+    max-width: 1200px;
+    padding: 0px 35px;
+}
+.container-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+.flex-middle{
+    align-items: center;
+}
+.flex-space-between{
+    justify-content: space-between;
+}
+.grid-collapse {
+    margin-left: 0;
+}
+.grid-medium {
+    margin-left: -25px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.width-1-2{
+    width: 50%;
+}
+.width-medium-7-10 {
+    width: 70%;
+}
+.width-medium-3-10{
+    width: 30%;
+}
+.width-large-2-3 {
+    width: 66.666%;
+}
+.width-large-1-3{
+    width: 33.333%;
+}
+.dropdown-navbar{
+    margin-top: 6px;
+    background: #fff;
+    color: #666;
+    left: -1px;
+}
+.dropdown {
+    vertical-align: top;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.dropdown, .dropdown-navbar{
+    display: none;
+    position: absolute;
+    z-index: 1020;
+    box-sizing: border-box;
+    width: 200px;
+}
+.margin-bottom{
+    margin-bottom: 15px !important;
+}
+.slidenav-position {
+    position: relative;
+}
+.slider-container{
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    z-index: 0;
+    touch-action: pan-y;
+}
+.text-left {
+    text-align: left!important;
+}
+.pagination-item {
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.panel {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.panel-title {
+    font-size: inherit;
+    line-height: 168%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+.form-dk{
+    padding: 30px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.tl-header{
+    color: #7a2c8d;
+    padding-bottom: 10px;
+}
+.form-group input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form-group button{
+    padding: 10px;
+    color: #fff;
+    background: #7a2c8d;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+}
+.sukien-bkap-header-001{
+    transition: all 0.5s ease;
+    z-index: 999 !important;
+    height: 135px;
+    background: #792B8E;
+    position: relative;
+    width: auto;
+}
+.sukien-bkap-header-001 .header {
+    padding-top: 20px;
+}
+.sukien-bkap-header-001 .header .logo-bkap a {
+    display: block;
+    margin: 0px;
+}
+.sukien-bkap-header-001 .header .logo-bkap a img{
+    width: 255px;
+}
+.sukien-bkap-header-001 .header .logo-bkap .title-sub{
+    color: #F0BE45;
+    font-size: 13px;
+}
+.sukien-bkap-header-001 .header .brandname {
+    text-align: right;
+}
+.sukien-bkap-header-001 .header .brandname .title {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+}
+.sukien-bkap-header-001 .header .brandname .title-sub {
+    color: #F0BE45;
+    font-size: 13px;
+}
+.sukien-bkap-header-001 .navbar {
+    height: 45px;
+    background: #4F1A5E;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.sukien-bkap-header-001 .navbar .uk-container>div {
+    position: relative;
+}
+.sukien-bkap-header-001 .navbar .nav-left {
+    text-align: right;
+    padding-right: 40px;
+}
+.sukien-bkap-header-001 .navbar .nav-right {
+    text-align: left;
+    padding-left: 50px;
+}
+.sukien-bkap-header-001 .navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sukien-bkap-header-001 .navbar .nav-left>ul>li, 
+.sukien-bkap-header-001 .navbar .nav-right>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.sukien-bkap-header-001 .navbar .nav-left>ul>li>a,
+.sukien-bkap-header-001 .navbar .nav-right>ul>li>a{
+    height: 45px;
+    line-height: 45px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 0px 10px;
+}
+.sukien-bkap-header-001 .navbar .nav-left>ul>li>a:hover,
+.sukien-bkap-header-001 .navbar .nav-right>ul>li>a:hover{
+    text-decoration: underline;
+    outline: 0;
+}
+.sukien-bkap-header-001 .navbar .nav-left>ul>li:hover .dropdown{
+    display: block;
+}
+.sukien-bkap-header-001 .navbar .nav-right>ul>li:hover .dropdown{
+    display: block;
+}
+.sukien-bkap-header-001 .navbar ul li .dropdown {
+    top: 39px !important;
+    padding: 0px;
+}
+.sukien-bkap-header-001 .navbar ul li .dropdown li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.sukien-bkap-header-001 .navbar ul li .dropdown a {
+    text-align: left;
+    padding: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-navbar>li>a {
+    color: #000;
+}
+.nav li>a {
+    display: block;
+}
+.sukien-bkap-header-001 .navbar ul li .dropdown li:hover, .sukien-bkap-header-001 .navbar ul li .dropdown a:hover{
+    background-color: #792B8E;
+    color: #fff;
+}
+.sukien-bkap-header-001 .icon {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 60px;
+    margin-left: -30px;
+    text-align: center;
+    z-index: 99999999;
+}
+.sukien-bkap-header-001 .icon a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.sukien-bkap-header-001 .icon a img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.sukien-bkap-breadcrumb-001 {
+    background: #F8F8F8;
+    padding: 15px 0px;
+}
+.sukiensukien-bkap-breadcrumb-001 .breadcrumb {
+    margin: 0px;
+    padding: 0px;
+}
+.breadcrumb>li{
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+}
+.sukien-bkap-breadcrumb-001 .breadcrumb a {
+    color: #252525;
+    display: inline-block;
+}
+.breadcrumb>li:nth-child(n+2):before {
+    content: "/";
+    display: inline-block;
+    margin: 0 8px;
+}
+.lib-single-header-002 .catalogue ul {
+    margin: 0px;
+    padding: 0px;
+}
+.lib-single-header-002 .catalogue ul li {
+    display: inline-block;
+}
+.lib-single-header-002 .catalogue ul li a {
+    color: #000;
+    text-transform: uppercase;
+    margin-right: 15px;
+    padding: 10px 0px;
+    display: block;
+}
+.lib-single-header-002 .catalogue {
+    border-bottom: 1px solid #E5E5E5;
+}
+.lib-single-header-002 .catalogue ul li.active a {
+    border-bottom: 3px solid #c81926;
+    text-decoration: none;
+}
+.lib-single-header-002 .catalogue ul li a:hover {
+    border-bottom: 3px solid #c81926;
+    text-decoration: none;
+}
+.sukien-bkap-articlecatalogue-001 .feature .main .thumb {
+    height: 300px;
+}
+.sukien-bkap-articlecatalogue-001 .thumb {
+    margin-bottom: 10px;
+}
+.sukien-bkap-articlecatalogue-001 .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sukien-bkap-articlecatalogue-001 .body .title {
+    margin-bottom: 5px;
+    line-height: 168%;
+    max-height: 70px;
+    overflow: hidden;
+}
+.sukien-bkap-articlecatalogue-001 .body .title a {
+    color: #000;
+}
+.sukien-bkap-articlecatalogue-001 .body .title a:hover {
+    text-decoration: underline;
+}
+.sukien-bkap-articlecatalogue-001 .feature .main .body .title a {
+    font-weight: bold;
+    font-size: 18px;
+}
+.sukien-bkap-articlecatalogue-001 .body .meta {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 168%;
+}
+.sukien-bkap-articlecatalogue-001 .body .meta i {
+    margin-right: 10px;
+}
+.sukien-bkap-articlecatalogue-001 .feature .aside>div{
+    margin-bottom: 5px;
+}
+.sukien-bkap-articlecatalogue-001 .thumb {
+    margin-bottom: 10px;
+}
+.sukien-bkap-articlecatalogue-001 .feature .aside .thumb {
+    width: 100px;
+    height: 75px;
+    float: left;
+}
+.sukien-bkap-articlecatalogue-001 .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sukien-bkap-articlecatalogue-001 .feature .aside .body {
+    margin-left: 110px;
+}
+.sukien-bkap-articlecatalogue-001 .body .title {
+    margin-bottom: 5px;
+    line-height: 168%;
+    max-height: 70px;
+    overflow: hidden;
+}
+.sukien-bkap-articlecatalogue-001 .body .title a {
+    color: #000;
+}
+.sukien-bkap-articlecatalogue-001 .body .title a:hover {
+    text-decoration: underline;
+}
+.sukien-bkap-articlecatalogue-001 .feature .aside>div:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.sukien-bkap-articlecatalogue-001 .slider {
+    border-top: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
+    padding: 40px 0px 15px 0px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.sukien-bkap-articlecatalogue-001 .slider .label {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    background: #B10A05;
+    color: #FFF;
+    padding: 0px 15px;
+}
+.sukien-bkap-articlecatalogue-001 .catalogue>div {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+.sukien-bkap-articlecatalogue-001 .thumb {
+    margin-bottom: 10px;
+}
+.sukien-bkap-articlecatalogue-001 .catalogue .thumb {
+    width: 268px;
+    height: 150px;
+    float: left;
+}
+.sukien-bkap-articlecatalogue-001 .catalogue .body {
+    margin-left: 288px;
+}
+.sukien-bkap-articlecatalogue-001 .body .meta {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 168%;
+}
+.sukien-bkap-articlecatalogue-001 .body .meta i {
+    margin-right: 10px;
+}
+.sukien-bkap-articlecatalogue-001 .body .description {
+    line-height: 168%;
+}
+.sukien-bkap-articlecatalogue-001 .catalogue .body .title a {
+    font-weight: bold;
+    font-size: 17px;
+}
+.sukien-bkap-articlecatalogue-001 .body .title a {
+    color: #000;
+}
+.sukien-bkap-articlecatalogue-001 .catalogue>div:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.pagination-item>li {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.pagination-item>li>span, .pagination-item>li>a {
+    display: inline-block;
+    min-width: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    box-sizing: content-box;
+    text-align: center;
+}
+.sukien-bkap-articlecatalogue-001 .pagination-item .active{
+    margin: 0;
+}
+.sukien-bkap-articlecatalogue-001 .pagination-item .active span {
+    background: #F1F1F1;
+    padding: 5px 15px;
+    border: 1px solid #E5E5E5;
+    color: #000;
+}
+.sukien-bkap-articlecatalogue-001 .pagination-item a {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+    color: #000;
+}
+.sukien-bkap-articlecatalogue-001 .pagination-item a:hover {
+    background: #F1F1F1;
+}
+.sukien-bkap-aside-002 .panel {
+    border: 1px solid #E5E5E5;
+}
+.sukien-bkap-aside-002 .panel-title {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px 0px;
+    margin: 0px;
+    padding-left: 15px;
+}
+.sukien-bkap-aside-002 .panel-body {
+    padding: 15px 15px 5px 15px;
+}
+.sukien-bkap-aside-002 .panel-body>div {
+    margin-bottom: 10px;
+}
+.sukien-bkap-aside-002 .panel-body>div:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.sukien-bkap-aside-002 .thumb {
+    width: 100px;
+    height: 75px;
+    float: left;
+    margin-bottom: 10px;
+}
+.sukien-bkap-aside-002 .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sukien-bkap-aside-002 .body {
+    margin-left: 110px;
+}
+.sukien-bkap-aside-002 .body .title {
+    line-height: 168%;
+    height: 70px;
+    overflow: hidden;
+}
+.sukien-bkap-aside-002 .body .title a {
+    color: #000;
+}
+.sukien-bkap-aside-002 .body .title a:hover {
+    text-decoration: underline;
+}
+.sukien-bkap-aside-001 .panel {
+    border: 1px solid #E5E5E5;
+}
+.sukien-bkap-aside-001 .panel-title {
+    border-bottom: 1px solid #E5E5E5;
+    background: #EEE;
+    padding: 10px 0px;
+    margin: 0px;
+}
+.sukien-bkap-aside-001 .panel-title>span {
+    border-left: 3px solid #FF6115;
+    padding-left: 10px;
+}
+.sukien-bkap-aside-001 .panel-body {
+    padding: 15px 15px 5px 15px;
+    background: #F5F5F5;
+}
+.sukien-bkap-aside-001 .panel-body>div {
+    margin-bottom: 10px;
+}
+.sukien-bkap-aside-001 .panel-body>div:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.sukien-bkap-aside-001 .thumb {
+    width: 100px;
+    height: 75px;
+    float: left;
+    margin-bottom: 10px;
+}
+.sukien-bkap-aside-001 .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sukien-bkap-aside-001 .body {
+    margin-left: 110px;
+}
+.sukien-bkap-aside-001 .body .title a {
+    color: #000;
+}
+.sukien-bkap-aside-001 .body .title a:hover {
+    text-decoration: underline;
+}
+.sukien-bkap-support-001 {
+    padding: 25px 0px;
+}
+.sukien-bkap-support-001 .panel-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #792891;
+    line-height: 168%;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.sukien-bkap-support-001 .panel-body>.description {
+    max-width: 668px;
+    margin: 0px auto 25px auto;
+    text-align: center;
+    color: #252525;
+    line-height: 168%;
+}
+.sukien-bkap-support-001 .grid .thumb {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 0px auto 35px auto;
+}
+.sukien-bkap-support-001 .grid .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.sukien-bkap-support-001 .grid .title {
+    line-height: 168%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.sukien-bkap-support-001 .grid .title a:hover{
+    text-decoration: underline;
+}
+.footer-center {
+    background: #7a2c8d;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.footer-center .ft-left {
+    width: 40%;
+    float: left;
+}
+.footer-center .ft-left .ft-logo img {
+    width: 255px;
+}
+.ft-left .ft-logo .ft-sub-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.ft-sub-title span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.ft-left .ft-contact {
+    padding-top: 15px;
+}
+.ft-sub-title {
+    font-weight: bold;
+    color: #fbb040;
+    height: 30px;
+}
+.footer-center ul {
+    padding-left: 3px !important;
+}
+.footer-center ul li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+.ft-contact a {
+    color: #fff;
+}
+.ft-contact {
+    color: #fff;
+}
+.ft-left .ft-contact a:hover{
+    text-decoration: underline;
+}
+.footer-center .ft-right {
+    width: 60%;
+    float: left;
+}
+.ft-icon {
+    padding-bottom: 25px;
+}
+.ft-icon .icon img {
+    width: 50px;
+    padding-right: 15px;
+}
+.ft-nav .ft {
+    width: 25%;
+    float: left;
+}
+.ft-nav .ft ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.ft-right .ft-sub-menu {
+    margin-top: 20px;
+}
+.sukien-bkap-footer-001 .copyright {
+    background: #252525;
+    color: #B9B9B9;
+    padding: 10px 0px;
+}
+.sukien-bkap-footer-001 .copyright p {
+    margin: 0px;
+    padding: 0px;
+}
+.sukien-bkap-footer-001 .copyright a {
+    color: #FFF;
+}
