@@ -254,9 +254,13 @@ p{
 .nav li>a {
     display: block;
 }
-.sukien-bkap-header-001 .navbar ul li .dropdown li:hover, .sukien-bkap-header-001 .navbar ul li .dropdown a:hover{
-    background-color: #792B8E;
-    color: #fff;
+.sukien-bkap-header-001 .navbar ul li .dropdown li:hover{
+    background: #792b8e;
+    border-bottom: 1px solid #792b8e;
+}
+.sukien-bkap-header-001 .navbar ul li .dropdown li:hover a{
+    color: #FFF;
+	text-decoration:none;
 }
 .sukien-bkap-header-001 .icon {
     transition: all 0.5s ease;
