@@ -94,6 +94,12 @@ p{
 .margin-bottom{
     margin-bottom: 15px !important;
 }
+.navbar-fixed{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 1000;
+}
 .slidenav-position {
     position: relative;
     border: none;
