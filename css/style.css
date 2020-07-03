@@ -25,7 +25,7 @@ img{
     box-sizing: border-box;
     vertical-align: middle;
 }
-p, ul{
+p{
     margin: 0 0 15px;
 }
 .container{
@@ -57,6 +57,7 @@ p, ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left:-25px
 }
 .width-1-2{
     width: 50%;
@@ -95,14 +96,13 @@ p, ul{
 }
 .slidenav-position {
     position: relative;
+    border: none;
 }
 .slider-container{
     overflow: hidden;
 }
 .slider {
     position: relative;
-    z-index: 0;
-    touch-action: pan-y;
 }
 .text-left {
     text-align: left!important;
@@ -287,7 +287,6 @@ p, ul{
     padding: 0px;
 }
 .breadcrumb>li{
-    font-size: 1rem;
     vertical-align: top;
     display: inline-block;
 }
@@ -320,6 +319,7 @@ p, ul{
 .lib-single-header-002 .catalogue ul li.active a {
     border-bottom: 3px solid #c81926;
     text-decoration: none;
+    font-weight: bold;
 }
 .lib-single-header-002 .catalogue ul li a:hover {
     border-bottom: 3px solid #c81926;
@@ -403,7 +403,7 @@ p, ul{
 }
 .sukien-bkap-articlecatalogue-001 .slider {
     border-top: 1px solid #e5e5e5;
-    /* border-bottom: 1px solid #e5e5e5; */
+    border-bottom: 1px solid #e5e5e5;
     padding: 40px 0px 15px 0px;
     margin-bottom: 25px;
     position: relative;
@@ -416,13 +416,47 @@ p, ul{
     color: #FFF;
     padding: 0px 15px;
 }
+.sukien-bkap-articlecatalogue-001 .slider .slidenav-previous {
+    left: 0px;
+}
+.sukien-bkap-articlecatalogue-001 .slider .slidenav {
+    background: rgba(251, 108, 39, .9);
+    top: 55px;
+    width: 35px;
+    height: 100px;
+    line-height: 100px;
+    color: #FFF;
+    font-size: 15px;
+}
+.grid-medium>.slide-after,  .grid-medium>div{
+    padding-left: 25px;
+}
+.slider-container>.grid-medium>div, .slider-container>.grid-medium>.slide-after{ 
+    width: 269.492px;
+}
+.slidenav-position .slidenav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: -30px;
+}
+.sukien-bkap-articlecatalogue-001 .slider .slidenav-next {
+    right: 0px;
+}
+.slider, .slideshow {
+    z-index: 0;
+    touch-action: pan-y;
+}
+.sukien-bkap-articlecatalogue-001 .slider .thumb {
+    height: 150px;
+}
 .sukien-bkap-articlecatalogue-001 .catalogue>div {
     margin-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 15px;
 }
-.sukien-bkap-articlecatalogue-001 .thumb {
-    margin-bottom: 10px;
+.sukien-bkap-articlecatalogue-001 .slider .body .title a {
+    font-weight: bold;
 }
 .sukien-bkap-articlecatalogue-001 .catalogue .thumb {
     width: 268px;
@@ -709,4 +743,9 @@ p, ul{
 }
 .sukien-bkap-footer-001 .copyright a {
     color: #FFF;
+}
+@media (max-width: 1200px) {
+    .slider-container>.grid-medium>div, .slider-container>.grid-medium>.slide-after{
+        width: 222.828px;
+    }
 }
